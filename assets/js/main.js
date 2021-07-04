@@ -54,63 +54,44 @@ function scrollTop(){
 }
 window.addEventListener('scroll', scrollTop)
 
-// const darkTheme = 'dark-theme'
-// const iconTheme = 'uil-sun'
-// const themeButton = document.getElementById('btn-toggle')
-// const selectedTheme = localStorage.getItem('selected-theme')
-// const selectedIcon = localStorage.getItem('selected-icon')
 
-// const btn = document.querySelector(".btn-toggle");
-// const theme = document.querySelector("#theme-link");
-// btn.addEventListener("click", function() {
-//     if(theme.getAttribute("href") == "assets/css/styles.css") {
-//         theme.href = "assets/css/dark.css";
-        
-//     }
-//     else {
-//         theme.href = "assets/css/styles.css";
-//     }
-// })
+
 // DARK MODE
-
-// const themeButton = document.getElementById('theme-button')
-// const btn = document.querySelector(".btn-toggle");
-// const theme = document.querySelector("#theme-link");
-// const darkTheme = 'dark-theme'
-// const iconTheme = 'uil-sun'
-
-
-// const selectedTheme = localStorage.getItem('selected-theme')
-// const selectedIcon = localStorage.getItem('selected-icon')
-
-// const getCurrentTheme = () => document.body.classList.contains(darkTheme) ?  'dark' : 'light'
-// const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ?  'uil-moon' : 'uil-sun'
-
-// // if(selectedTheme) {
-// //     document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-// //     themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme) 
-// // }
-
-
 
 const btn = document.querySelector(".btn-toggle");
 const theme = document.querySelector("#theme-link");
 btn.addEventListener('click', () => {
     if(theme.getAttribute("href") == "assets/css/styles.css") {
                 theme.href = "assets/css/dark.css";
-                // document.body.classList.toggle(darkTheme)
-                // themeButton.classList.toggle(iconTheme)
             }
             else {
                 theme.href = "assets/css/styles.css";
-            }
-    // localStorage.setItem('selected-theme', getCurrentTheme)
-    // localStorage.setItem('selected-icon', getCurrentIcon)
+            }  
 })
 
+const themeButton = document.getElementById('theme-button')
+const darkTheme = 'dark-theme'
+const iconTheme = 'uil-sun'
 
+const selectedTheme = localStorage.getItem('selected-theme')
+const selectedIcon = localStorage.getItem('selected-icon')
 
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
 
+if(selectedTheme) {
+    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+    themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
+}
+
+themeButton.addEventListener('click', () => {
+    document.body.classList.toggle(darkTheme)
+    themeButton.classList.toggle(iconTheme)
+    
+
+    localStorage.setItem('selected-theme', getCurrentTheme())
+    localStorage.setItem('selected-icon', getCurrentIcon())
+})
 
 
 /*===== MIXITUP FILTER PORTFOLIO =====*/ 

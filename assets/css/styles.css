@@ -101,6 +101,10 @@ img {
   font-size: 1.3rem;
 }
 
+body.dark-theme {
+  
+}
+
 
 .section-title, .section-subtitle {
   text-align: center;
