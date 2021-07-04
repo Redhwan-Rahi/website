@@ -94,6 +94,14 @@ img {
   padding: 4rem 0 2rem;
 }
 
+.btn-toggle {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
+
 .section-title, .section-subtitle {
   text-align: center;
 }

@@ -54,6 +54,65 @@ function scrollTop(){
 }
 window.addEventListener('scroll', scrollTop)
 
+// const darkTheme = 'dark-theme'
+// const iconTheme = 'uil-sun'
+// const themeButton = document.getElementById('btn-toggle')
+// const selectedTheme = localStorage.getItem('selected-theme')
+// const selectedIcon = localStorage.getItem('selected-icon')
+
+// const btn = document.querySelector(".btn-toggle");
+// const theme = document.querySelector("#theme-link");
+// btn.addEventListener("click", function() {
+//     if(theme.getAttribute("href") == "assets/css/styles.css") {
+//         theme.href = "assets/css/dark.css";
+        
+//     }
+//     else {
+//         theme.href = "assets/css/styles.css";
+//     }
+// })
+// DARK MODE
+
+// const themeButton = document.getElementById('theme-button')
+// const btn = document.querySelector(".btn-toggle");
+// const theme = document.querySelector("#theme-link");
+// const darkTheme = 'dark-theme'
+// const iconTheme = 'uil-sun'
+
+
+// const selectedTheme = localStorage.getItem('selected-theme')
+// const selectedIcon = localStorage.getItem('selected-icon')
+
+// const getCurrentTheme = () => document.body.classList.contains(darkTheme) ?  'dark' : 'light'
+// const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ?  'uil-moon' : 'uil-sun'
+
+// // if(selectedTheme) {
+// //     document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+// //     themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme) 
+// // }
+
+
+
+const btn = document.querySelector(".btn-toggle");
+const theme = document.querySelector("#theme-link");
+btn.addEventListener('click', () => {
+    if(theme.getAttribute("href") == "assets/css/styles.css") {
+                theme.href = "assets/css/dark.css";
+                // document.body.classList.toggle(darkTheme)
+                // themeButton.classList.toggle(iconTheme)
+            }
+            else {
+                theme.href = "assets/css/styles.css";
+            }
+    // localStorage.setItem('selected-theme', getCurrentTheme)
+    // localStorage.setItem('selected-icon', getCurrentIcon)
+})
+
+
+
+
+
+
 /*===== MIXITUP FILTER PORTFOLIO =====*/ 
 var mixer = mixitup(".portfolio__container", {
     selectors: {
@@ -95,6 +154,8 @@ const mySwiper = new Swiper('.testimonial__container', {
     }
 })
 
+
+
 gsap.from('.home__img', {opacity: 0, duration: 2, delay: .5, x: 60})
 
 gsap.from('.home__data', {opacity: 0, duration: 2, delay: .8, y: 25})
@@ -103,5 +164,3 @@ gsap.from('.home__greeting, .home__name, .home__profession, .home__button', {opa
 gsap.from('.nav__logo, .nav__toggle', {opacity:0, duration: 2, delay: 1.5, y: 25, ease:'expo.out', stagger: .2});
 gsap.from('.nav__item', {opacity:0, duration: 2, delay: 1.8, y: 25, ease:'expo.out', stagger: .2});
 gsap.from('.home__social-icon', {opacity: 0, duration: 2.5, delay: 2.3, y: 25, ease:'expo.out', stagger: .2})
-
-
