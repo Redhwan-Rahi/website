@@ -105,6 +105,10 @@ body.dark-theme {
   
 }
 
+.mailLink {
+  color: var(--first-color-light);
+}
+
 
 .section-title, .section-subtitle {
   text-align: center;
