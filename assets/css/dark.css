@@ -243,7 +243,7 @@ img {
   justify-content: center;
   align-items: center;
   padding: .5rem;
-  background: rgba(123, 111, 113, 0.7);
+  background: black;
   border-radius: .5rem;
   z-index: var(--z-tootip);
   transition: .4s;
@@ -251,12 +251,12 @@ img {
 }
 
 .scrolltop:hover {
-  background-color: var(--first-color);
+  background-color: black;
 }
 
 .scrolltop__icon {
   font-size: 2rem;
-  color: var(--first-color-lighten);
+  color: white;
 }
 
 .show-scroll {
