@@ -39,8 +39,8 @@
                     <ul class="nav__list">
                         <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact Me</a></li>
                         <li class="nav__item"><button class="btn-toggle nav__link"><i class='uil uil-moon change-theme' id="theme-button"></i></button></li>
                     </ul>
@@ -58,8 +58,8 @@
             <section class="home" id="home">
                 <div class="home__container bd-container bd-grid">
                     <div class="home__data">
-                        <span class="home__greeting">Hello! My name is</span>
-                        <br>
+                        <!-- <span class="home__greeting">Hello! My name is</span>
+                        <br> -->
                         <h1 class="home__name">Redhwan Rahi</h1>
                         <br>
                         <span class="home__profession">Software Engineer</span>
@@ -68,7 +68,7 @@
                     
                     <div class="home__social">
                         <a href="https://www.linkedin.com/in/redhwanrahi" target="_blank" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                        <a href="https://www.instagram.com/notrahi" target="_blank" class="home__social-icon"><i class='bx bxl-instagram'></i></a>
+                        <!-- <a href="https://www.instagram.com/notrahi" target="_blank" class="home__social-icon"><i class='bx bxl-instagram'></i></a> -->
                         <a href="https://github.com/Redhwan-Rahi" target="_blank" class="home__social-icon"><i class='bx bxl-github'></i></a>
                     </div>
 
@@ -80,7 +80,7 @@
             
             <!--===== ABOUT =====-->
             <section class="about section bd-container" id="about">
-                <span class="section-subtitle">My history</span>
+                <!-- <span class="section-subtitle">My history</span> -->
                 <h2 class="section-title">About me</h2>
 
                 <div class="about__container  bd-grid">
@@ -108,8 +108,8 @@
             </section>
 
             <!--===== QUALIFICATION =====-->
-            <section class="qualification bd-container section">
-                <span class="section-subtitle">Qualifications</span>
+            <section class="qualification bd-container section" id="experience">
+                <!-- <span class="section-subtitle">Qualifications</span> -->
                 <h2 class="section-title">Experience and Education</h2>
 
                 <div class="qualification__container bd-grid">
@@ -217,7 +217,7 @@
 
             <!--===== SERVICES =====-->
             <section class="services section bd-container" id="skills">
-                <span class="section-subtitle">What I Am Able To Do</span>
+                <!-- <span class="section-subtitle">What I Am Able To Do</span> -->
                 <h2 class="section-title">Skills</h2>
 
                 <div class="services__container bd-grid">
@@ -249,22 +249,7 @@
                 </div>
             </section>
             
-            <!--===== PROJECT IN MIND =====-->
-            <section class="project bd-container section">
-                <div class="project__container bd-grid">
-                    <div class="project__data">
-                        <i class='bx bx-chat project__icon'></i>
-                        <div>
-                            <h2 class="project__title">Questions in Mind?</h2>
-                            <p class="project__description">Feel free to reach out to me to clarify anything you need!</p>
-                        </div>
-                        <div>
-                            <a href="#contact" class="button button-white">Contact Me!</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
+            
             <!--===== PORTFOLIO =====-->
             <section class="portfolio bd-container section" id="portfolio">
                 <span class="section-subtitle">Highlighted Work</span>
@@ -367,18 +352,53 @@
             </section> -->
             <br /><br />
             <!--===== CONTACTME =====-->
+
+
+            
+            <!--===== PROJECT IN MIND =====-->
+            <!-- <section class="project bd-container section">
+                <div class="project__container bd-grid">
+                    <div class="project__data">
+                        <i class='bx bx-chat project__icon'></i>
+                        <div>
+                            <h2 class="project__title">Questions in Mind?</h2>
+                            <p class="project__description">Feel free to reach out to me using any of the methods linked below!</p>
+                        </div>
+                        <div>
+                            <a href="#contact" class="button button-white">Contact Me!</a>
+                            <i class='bx bx-chat project__icon' id="msgIcon"></i>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+
+        
             <section class="contact bd-container section" id="contact">
-                <span class="section-subtitle">Any Burning Questions?</span>
-                <h2 class="section-title">Contact Me!</h2>
+                <!-- <span class="section-subtitle">Any Burning Questions?</span>
+                <h2 class="section-title">Contact Me!</h2> -->
 
                 <div class="contact__container bd-grid">
+                    <div class="project__container bd-grid">
+                        <div class="project__data">
+                            <i class='bx bx-chat project__icon'></i>
+                            <div>
+                                <h2 class="project__title">Questions in Mind?</h2>
+                                <p class="project__description">Feel free to reach out to me using any of the methods linked below!</p>
+                            </div>
+                            <div>
+                                <!-- <a href="#contact" class="button button-white">Contact Me!</a> -->
+                                <i class='bx bx-chat project__icon' id="msgIcon"></i>
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="contact__content bd-grid">
-                        <div class="contact__box">
+                        <!-- <div class="contact__box">
                             <i class='bx bx-home contact__icon' ></i>
                             <h3 class="contact__title">Location</h3>
                             <span class="contact__description">New Jersey</span>
-                        </div>
+                        </div> -->
 
                         <!-- <div class="contact__box">
                             <i class='bx bx-phone contact__icon' ></i>
@@ -387,8 +407,8 @@
                         </div> -->
 
                         <div class="contact__box">
-                            <i class='bx bx-envelope contact__icon' ></i>
-                            <h3 class="contact__title">Email</h3>
+                            <i class='bx bx-envelope contact__icon'></i>
+                            <h3 class="contact__title"><a class="mailLink" href= "mailto:redhwanrahi1@gmail.com">Email</a></h3>
                             <span class="contact__description"><a class="mailLink" href= "mailto:redhwanrahi1@gmail.com">redhwanrahi1@gmail.com</a></span>
                         </div>
 
@@ -423,7 +443,7 @@
                 </div>
             </section>
         </main>
-
+      
         <!--===== FOOTER =====-->
         <footer class="footer">
             <div class="footer__container bd-container">
