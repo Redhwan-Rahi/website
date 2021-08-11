@@ -64,7 +64,7 @@ body {
   background-color: var(--first-color-lighten);
   color: var(--text-color);
   line-height: 1.6;
-  background-color: black;
+  background-color: #111827;
 }
 
 h1, h2, h3, ul, p {
@@ -109,13 +109,13 @@ img {
 
 .section-title, .section-subtitle {
   text-align: center;
-  background-color: black;
+  background-color: #111827;
   color: white;
 }
 
 .section-title {
   font-size: var(--h1-font-size);
-  background-color: black;
+  background-color: #111827;
   color: white;
   margin-bottom: var(--mb-3);
 }
@@ -124,7 +124,7 @@ img {
   display: block;
   font-size: var(--smaller-font-size);
   font-weight: var(--font-semi-bold);
-  background-color: black;
+  background-color: #111827;
   color: white;
 }
 
@@ -134,14 +134,14 @@ img {
   width: calc(100% - 2rem);
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
-  background-color: black;
+  background-color: #111827;
   color: white;
 }
 
 .bd-grid {
   display: grid;
   gap: 1.5rem;
-  background-color: black;
+  background-color: #111827;
   color: white;
 }
 
@@ -151,7 +151,7 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: #000;
+  background-color: #111827;
 }
 
 /*===== NAV =====*/
@@ -160,7 +160,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: black;
+  background-color: #111827;
 }
 
 @media screen and (max-width: 768px) {
@@ -171,7 +171,7 @@ img {
     width: 100%;
     padding-top: 1.5rem;
     text-align: center;
-    background-color: #000;
+    background-color: #111827;
     transition: .4s;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 0 0 1rem 1rem;
@@ -233,7 +233,7 @@ img {
 
 /* Change background header */
 .scroll-header {
-  background-color: black;
+  background-color: #111827;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -242,7 +242,7 @@ img {
 }
 
 .scroll-header .nav__menu {
-  background-color: black;
+  background-color: #111827;
 }
 
 /*===== SCROLL TOP =====*/
@@ -254,7 +254,7 @@ img {
   justify-content: center;
   align-items: center;
   padding: .5rem;
-  background: black;
+  background: #111827;
   border-radius: .5rem;
   z-index: var(--z-tootip);
   transition: .4s;
@@ -262,7 +262,7 @@ img {
 }
 
 .scrolltop:hover {
-  background-color: black;
+  background-color: #111827;
 }
 
 .scrolltop__icon {
@@ -277,7 +277,7 @@ img {
 
 /*===== HOME =====*/
 .home {
-  background-color: #000;
+  background-color: #111827;
   overflow: hidden;
 }
 
@@ -379,13 +379,13 @@ img {
 
 /*===== ABOUT =====*/
 .about__data {
-  background-color: black;
+  background-color: #111827;
   text-align: center;
   color: white;
 }
 
 .about__description span {
-  background-color: black;
+  background-color: #111827;
   font-size: var(--h2-font-size);
   font-weight: var(--font-semi-bold);
   color: white;
@@ -443,10 +443,10 @@ img {
   display: block;
 }
 
-/*===== SERVICES =====*/
+/*===== SKILLS =====*/
 .services__data {
   padding: 3rem 1rem;
-  background-color: #000;
+  background-color:#1e2a3b;
   border-radius: .5rem;
   text-align: center;
   transition: .4s;
@@ -481,7 +481,7 @@ img {
 /*===== PROJECT IN MIND =====*/
 .project__container {
   padding: 1.5rem 1rem;
-  background-color: black;
+  background-color: #1e2a3b;
   color: var(--first-color-lighten);
   border-radius: .5rem;
   text-align: center;
@@ -515,7 +515,7 @@ img {
 }
 
 .portfolio__content {
-  background-color: #000;
+  background-color: #111827;
   border-radius: .5rem;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(174, 190, 205, 0.3);
@@ -598,7 +598,7 @@ img {
 }
 
 .contact__box {
-  background-color: #000;
+  background-color: #1e2a3b;
   border-radius: .5rem;
   padding: 1.5rem;
   text-align: center;
@@ -664,7 +664,7 @@ img {
 
 /*===== FOOTER =====*/
 .footer {
-  background-color: black;
+  background-color: #111827;
   color: white;
   text-align: center;
 }
