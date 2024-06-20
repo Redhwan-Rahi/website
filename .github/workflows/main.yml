@@ -15,7 +15,7 @@ jobs:
 
       - name: Run a one line script
         run: |
-          echo  " ">>READNE.md
+          echo  " ">>README.md
           git config user.name Redhwan-Rahi 
           git config user.email redhwanrahi1@gmail.com
           git add .
