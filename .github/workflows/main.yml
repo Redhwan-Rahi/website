@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Run a one line script
+        run: |
+          echo  " ">>READNE.md
+          git config user.name Redhwan-Rahi 
+          git config user.email redhwanrahi1@gmail.com
+          git add .
+          git commit -m "Always green!" 
+          git push
